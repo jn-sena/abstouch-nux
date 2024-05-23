@@ -2,57 +2,23 @@
     abstouch-nux
 </h1>
 <h3 align="center">
-    An absolute touchpad input client for GNU/Linux.
+    An absolute touchpad input client for GNU/Linux (X11 only).
 </h3>
 
 <h5 align="center">
-    <a href="https://github.com/acedron/abstouch-nux/blob/master/LICENSE"> <img src="https://img.shields.io/github/license/acedron/abstouch-nux?style=for-the-badge" alt="License" /> </a>
-    <a href="https://github.com/acedron/abstouch-nux/commit"> <img src="https://img.shields.io/github/last-commit/acedron/abstouch-nux?style=for-the-badge" alt="Last Commit" /> </a>
-    <a href="https://github.com/acedron/abstouch-nux/actions"> <img src="https://img.shields.io/github/workflow/status/acedron/abstouch-nux/CMake?style=for-the-badge" alt="Build Status" /> </a>
+    <a href="https://github.com/jn-sena/abstouch-nux/blob/main/LICENSE"> <img src="https://img.shields.io/github/license/jn-sena/abstouch-nux?style=for-the-badge" alt="License" /> </a>
+    <a href="https://github.com/jn-sena/abstouch-nux/commits/main"> <img src="https://img.shields.io/maintenance/yes/2021?style=for-the-badge" alt="Maintenance" /> </a>
 </h5>
+
+<h2 align="center">
+  this project was discontinued in 2021 and archived in 2024. <br />
+  check <a href="https://github.com/rszyma/abstouch-nux">rszyma/abstouch-nux</a> for a more accurate fork ♥ <br />
+  see the <a href="https://github.com/jn-sena/abstouch-nux/tree/classic">classic</a> branch for the older version. <br />
+</h2>
 
 
 &nbsp;
 <h2 align="center"> Installation </h2>
-
-<details>
-  <summary><strong> Arch Linux (Manjaro, Artix, etc.) </strong></summary>
-
-The package is available in the [AUR](https://aur.archlinux.org/packages/abstouch-nux).
-
-```bash
-$ git clone https://aur.archlinux.org/abstouch-nux.git
-$ cd abstouch-nux
-$ makepkg -si
-```
-
-**Make sure to add the user into the `input` group.**
-
-```bash
-$ sudo usermod -aG input $(whoami)
-```
-</details>
-
-<details>
-  <summary><strong> Debian/Ubuntu (Kali, Mint, etc.) </strong></summary>
-
-The package is available in my [ppa](https://launchpad.net/~acedron/+archive/ubuntu/ppa).
-
-```bash
-$ echo -e "deb http://ppa.launchpad.net/acedron/ppa/ubuntu focal main\ndeb-src http://ppa.launchpad.net/acedron/ppa/ubuntu focal main" | sudo tee -a /etc/apt/sources.list
-$ sudo apt-get update
-$ sudo apt-get install abstouch-nux
-```
-
-**Make sure to add the user into the `input` group.**
-
-```bash
-$ sudo usermod -aG input $(whoami)
-```
-</details>
-
-<details>
-  <summary><strong> Building From Source </strong></summary>
 
 You can make the project from source with [CMake](https://cmake.org).
 
@@ -65,7 +31,7 @@ You should install the dependencies first.
 Then you can build the package.
 
 ```bash
-$ git clone https://github.com/acedron/abstouch-nux.git
+$ git clone https://github.com/jn-sena/abstouch-nux.git
 $ cd abstouch-nux
 $ cmake -B build
 $ cmake --build build
@@ -77,7 +43,6 @@ $ sudo cmake --install build
 ```bash
 $ sudo usermod -aG input $(whoami)
 ```
-</details>
 
 <h2 align="center"> Usage </h2>
 
